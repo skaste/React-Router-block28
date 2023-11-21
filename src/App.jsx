@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import "./App.css";
-import "./Components/Blue";
+import Blue from "./Components/Blue";
+import Red from "./Components/Red";
 
 
-import React from "react";
+
 
 const App = () => {
   return (
@@ -16,8 +17,8 @@ const App = () => {
       </div>
       
       <Routes>
-        <Route path="/blue" element={<h1>Blue</h1>} />
-        <Route path="/red" element={<h1>Red</h1>} />
+        <Route path="/blue" element={<Blue/>} />
+        <Route path="/red" element={<Red/>}/>
       </Routes>
      
       
